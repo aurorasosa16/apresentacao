@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap" rel="stylesheet">
+    <title>Login</title>
+
+    <style>
+        
+        body{
+            background-image: url("fotofundo.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }        
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            font-family: "Ballet", cursive;
+            margin-bottom: 10px; 
+            letter-spacing: 3px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+        }
+        h2{
+            font-size: 40px;
+            font-family: "Ballet", cursive;
+            color: rgb(255, 255, 255);
+            margin-top: 0px;
+            
+        }
+         
+        form{
+            width: 300px;
+            height: 21 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .caixinha{
+            background-color: rgba(85, 163, 104, 0.521);
+            padding: 20px;
+              border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        label{
+            color: rgb(255, 255, 255);
+            font-family: cursive;
+        }
+
+        button{
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            background-color: rgb(28, 83, 46);
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            font-family: cursive;
+            
+        }
+
+        input{
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        .esqueci_minha_senha{
+            color: rgb(255, 255, 255);
+        }
+
+        .continuar{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>
+        Pokerock
+    </h1>
+<h2>
+    Login
+</h2>
+
+    <form action="" class="caixinha">
+        <label for="Email">
+            Email/Nome
+        </label>
+        <input type="email" name="Email" id="Email" placeholder="email@gmail.com">
+        <label for="Senha">
+            Senha
+        </label>
+        <input type="password" name="Senha" id="Senha" placeholder="Senha123.">
+        <label for="Esqueci">
+            <a href="esqueci minha senha.html" class="esqueci_minha_senha">
+                Esqueci minha senha
+            </a>
+        </label>
+        <button>
+            <a href="pag2.html" class="continuar">
+                Continuar
+            </a>
+        </button>
+        <button>
+            <a href="../registro/index.html" class="registro">
+                Registro 
+            </a>
+        </button>
+        
+    </form>
+
+</body>
+</html>
