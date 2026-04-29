@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linha do Tempo</title>
+
+    <style>
+        body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.bob {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    width: 300px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+        button {
+            background-color: black;
+            border: none;
+            border-radius: 75%;
+            height: 33px;
+            width: 33px;
+            top: 49%;
+            position: absolute;
+        }
+
+        .inspecionar{
+            left: 10%;
+        }
+
+        .roque {
+            left:30%;
+        }
+
+        .login {
+            left: 50%;
+        }
+
+        .gits {
+            left: 70%;
+        }
+
+        .registro {
+            left: 90%;
+        }
+
+        hr {
+            width: 80%;
+            left: 10%;
+            height: 5px;
+            background-color: black;
+            border: none;
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <hr>
+    <button class="inspecionar" onclick="inspecionar()"></button>
+    <button class="roque" onclick="roque()"></button>
+    <button class="login" onclick="login()"></button>
+    <button class="gits" onclick="github()"></button>
+    <button class="registro" onclick="loginerestro()"></button>
+
+    <script>
+
+        let container = document.getElementById('container');
+        function inspecionar() {
+            container.innerHTML =
+
+                `
+            <div class="bob">
+            <h2>inspecionando sites</h2>
+             <img src="feriasnoabril.png" alt="">
+            </div>
+
+            <div class="bob">
+            <h2>como que os sites funcionam?</h2>
+            <img src="laurapizza.png" alt="">
+            </div>
+            `
+        }
+
+        function roque() {
+
+            document.location.href = "./primeiro/index.html"
+
+        }
+        function login() {
+            document.location.href = "./login/login.html"
+        }
+
+        function github() {
+            document.location.href = "https://github.com/aurorasosa16/Pokerock"
+        }
+
+        function loginerestro() {
+            document.location.href = "./logineregistro/login/login.html"
+        }
+
+    </script>
+
+</body>
+
+</html>
